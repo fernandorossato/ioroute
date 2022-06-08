@@ -1,7 +1,7 @@
 # What is this?
 ioroute is a module developed to process "socket.io" methods and events as routes with request and reply like in hapi.js or express.
 
-Translated in google translator, see the original in [Brazilian Portuguese](https://github.com/fernandorossato/ioroute/README.br.md).
+Translated in google translator, see the original in [Brazilian Portuguese](https://github.com/fernandorossato/ioroute/blob/master/README.br.md).
 
 ## Installation
 ```
@@ -9,7 +9,7 @@ npm install ioroute --save
 ```
 
 ## Use
-```
+``` js
 const { MethodRoute, EventRoute } = require('ioroute')
 // Socket.io server
 const io = require('socket.io')(3000)
@@ -30,7 +30,7 @@ io.on('connection', (socket) => {
 ## Route exemple
 You must create a file called routes.js with the routes in the directory you entered in the register.
 You can also create subdirectories that also have a file called routes.js with the routes.
-```
+``` js
 module.exports = [
     {
         method: 'UserLogin',
@@ -48,7 +48,7 @@ module.exports = [
 ```
 
 ## Full Exemple
-Check out & run [Full Exemple](https://github.com/fernandorossato/ioroute/example) to see full example usage of the library.
+Check out & run [Full Exemple](https://github.com/fernandorossato/ioroute/tree/master/example) to see full example usage of the library.
 
 # Documentation
 Some settings are supported in the route definition, you can set them in the "options" attribute of the route. These are listed below:
@@ -60,7 +60,7 @@ Some settings are supported in the route definition, you can set them in the "op
 To define that a connected client is authenticated you must set `LoginOk = true` on its socket.
 
 ### Simple authentication example, please do something better!
-```
+``` js
 module.exports = [
     {
         method: 'UserLogin',
@@ -86,12 +86,12 @@ module.exports = [
 ## Changing ioroute log datetime format
 Put the line below before importing ioroute.
 
-```
+``` js
 process.env.IOR_LOG_TIMEFORMAT = 'YYYY-MM-DD HH:mm:ss.SSS'
 ```
 
 Exemple:
-```
+``` js
 process.env.IOR_LOG_TIMEFORMAT = 'YYYY-MM-DD HH:mm:ss.SSS'
 
 const { MethodRoute, EventRoute } = require('ioroute')
