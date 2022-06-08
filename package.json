@@ -1,0 +1,27 @@
+{
+  "name": "ioroute",
+  "version": "0.0.1",
+  "description": "Router socket.io events and call methods like hapi.js route",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandorossato/ioroute.git"
+  },
+  "keywords": [
+    "socket.io",
+    "route"
+  ],
+  "author": "Fernando Rossato",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/fernandorossato/ioroute/issues"
+  },
+  "homepage": "https://github.com/fernandorossato/ioroute#readme",
+  "dependencies": {
+    "glob": "^8.0.3",
+    "moment": "^2.29.3"
+  }
+}
